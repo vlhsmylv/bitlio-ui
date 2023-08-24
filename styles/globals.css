@@ -1,0 +1,102 @@
+
+:root {
+  --main-color: #9D81BB;
+  --main-color-smooth: #c7b9dd;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.collapsed > .navbar-toggler-icon {
+  background-image: url("/png/hamburger.png");
+} 
+
+.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+  background-image: url("/png/close-hamburger.png"); 
+}
+
+.navbar-toggler {
+  border: 0px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+
+.form-control:focus {
+  border-color: var(--main-color) !important;
+  box-shadow: none !important;
+}
+
+.form-select:focus {
+  border-color: var(--main-color) !important;
+  box-shadow: 0 0 0 0.25rem var(--main-color-smooth) !important;
+}
+
+.bg-bitlio {
+  background: var(--main-color) !important;
+}
+
+.text-bitlio {
+  color: var(--main-color) !important;
+}
+
+.spinner-grow {
+  background: var(--main-color-smooth) !important;
+}
+
+#dashboard-sidebar {
+  background: var(--main-color) !important;
+  color: #fbfbfb;
+}
+
+#dashboard {
+  display: flex;
+  height: 100vh;
+  background: whitesmoke;
+}
+
+.dashboard-content {
+  width: 100%;
+  margin: 30px 50px 30px 50px;
+}
+
+.progress-bar {
+  background-color: var(--main-color-smooth) !important; 
+}

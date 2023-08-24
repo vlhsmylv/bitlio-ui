@@ -1,0 +1,25 @@
+{
+  "name": "bitlio-beta",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "firebase": "^9.9.3",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-burger-menu": "^3.0.8",
+    "react-dom": "18.2.0",
+    "react-toastify": "^9.0.8"
+  },
+  "devDependencies": {
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5"
+  }
+}
