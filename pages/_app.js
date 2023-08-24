@@ -2,8 +2,7 @@ import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { ToastContainer } from "react-toastify";
 import Head from "next/head";
-import { AuthContextProvider } from "../context/AuthContext.context";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 // import Disabled from "../components/information/Disabled.information";
 
 const MyApp = ({ Component, pageProps }) => {
@@ -18,13 +17,14 @@ const MyApp = ({ Component, pageProps }) => {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' />
+        <link
+          href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+          rel="stylesheet"
+        />
       </Head>
 
-      <AuthContextProvider>
-        <Component {...pageProps} />
-        <ToastContainer limit={1} />
-      </AuthContextProvider>
+      <Component {...pageProps} />
+      <ToastContainer limit={1} />
     </>
   );
 };
