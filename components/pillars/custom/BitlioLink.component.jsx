@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-const BitlioLink = ({href, children, className}) => {
+const BitlioLink = ({target, href, children, className}) => {
     return (
         <Link href={href}>
-            <span className={"cursor-pointer " + className}>
+            <a target={target} className={"text-decoration-none cursor-pointer " + className}>
                 {children}
-            </span>
+            </a>
         </Link>
     )
 }

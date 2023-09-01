@@ -87,12 +87,14 @@ const BitlioFooter = ({ type }) => {
           </div>
           <div className="footer-inner-mobile-container">
             <BitlioLink
+              target="_blank"
               href="https://instagram.com/bitlio.app"
               className={"text-light"}
             >
               <i className="fa-brands fa-instagram"></i>
             </BitlioLink>
             <BitlioLink
+              target="_blank"
               href="https://linkedin.com/company/86661233"
               className={"text-light"}
             >
@@ -155,7 +157,7 @@ const BitlioFooter = ({ type }) => {
           }
 
           #footer-inner {
-            gap: 10px !important; 
+            gap: 10px !important;
             flex-direction: column;
           }
 
